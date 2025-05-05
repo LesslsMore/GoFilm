@@ -12,7 +12,9 @@ export default defineConfig({
         port: 3600,
         proxy: {
             "/api": {
-                target: `http://127.0.0.1:3601`,
+                // target: `http://127.0.0.1:3601`,
+                // target: `http://127.0.0.1:8000`,
+                target: `https://fjvtiyskqpsy.eu-central-1.clawcloudrun.com`,
                 // target: `http://113.44.5.201:3601`,
                 changeOrigin: true, // 允许跨域
                 rewrite: path => path.replace(/^\/api/, '')
